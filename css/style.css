@@ -1,0 +1,135 @@
+/*---------browser */
+
+a{
+	text-decoration: none;
+}
+
+.container{
+	width: 1240px;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------
+		Header Section/Logo Menu Cart
+----------------------------------------------*/
+
+.logo-menu-cart {
+	display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+	width: 20%;
+}
+
+.logo img{
+	width: 16em;
+}
+
+nav{
+	flex-grow: 0.3;
+}
+
+ul.menu {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.menu li a{
+	text-transform: uppercase;
+	color: red;
+}
+
+/*--------------------------------------------
+			Banner Section
+----------------------------------------------*/
+
+section.banner {
+	background: url(../img/flower-bkgd.jpg) no-repeat;
+    background-size: cover;
+    height: 35em;
+    position: relative;
+    /* z-index: -2; */
+    opacity: 0.7;
+
+}
+
+div.banner-txt {
+	text-align: center;
+    position: absolute;
+    top: 26%;
+    left: 38%;
+    color: #fff;
+    z-index: 1;
+    
+}
+
+div.banner-girl {
+    position: absolute;
+    top: 10%;
+    left: 37%;
+    width: 18%;
+    height: 70%;
+    opacity: 0.9;
+}
+
+.banner-girl img {
+	width: 90%;
+}
+/* ------------Gallery-------- */
+
+.box1{
+	background-image: url("../img/mens-category.jpg");
+	background-size: cover;
+}
+
+
+/* ------------carousel-------- */
+
+.main-carousel{
+	border: 1px solid black;
+	height: 80%;
+	margin-bottom: 50px;
+}
+.carousel-cell {
+  width: 20%;
+  height: 300px;
+  margin-right: 5px;
+  margin-left: 0;
+  
+  }
+
+  .carousel-cell img{
+  	width: 100%;
+  }
+
+
+/* ------------footer styling-------- */
+
+footer.contact-container {
+	width: 100%;
+	background-color: #000;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-container >div {
+	color:#fff;
+	padding: 30px;
+}
+
+.contact p {
+	font-family: 'Playfair Display', serif;
+	
+}
+
+footer a{
+	color:#fff;
+}
+
+.social ul{
+	list-style: none;
+}
+
+
