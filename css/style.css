@@ -1,7 +1,12 @@
-/*---------browser */
+/*---------browser---------- */
 
 a{
 	text-decoration: none;
+}
+
+body{
+	font-size: 16px;
+	font-family: 'Raleway Light'; 
 }
 
 .container{
@@ -12,8 +17,7 @@ a{
 /*--------------------------------------------
 		Header Section/Logo Menu Cart
 ----------------------------------------------*/
-
-.logo-menu-cart {
+section.logo-menu-cart {
 	display: flex;
     justify-content: space-between;
 }
@@ -34,6 +38,7 @@ ul.menu {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
+	padding-top: 30px;
 }
 
 .menu li a{
@@ -48,39 +53,84 @@ ul.menu {
 section.banner {
 	background: url(../img/flower-bkgd.jpg) no-repeat;
     background-size: cover;
-    height: 35em;
+    height: 38em;
     position: relative;
-    filter: brightness(85%);
-  
-
+    filter: brightness(80%);
 }
 
 div.banner-txt {
-	text-align: center;
-    position: absolute;
-    top: 26%;
-    left: 38%;
+	position: absolute;
+    top: 33%;
+    left: 29%;
     color: #fff;
-    z-index: 1;
-    
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: 2px 1px 0px #242424;
 }
+		.banner-txt p {
+			font-family: "Raleway"; 
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		.banner-txt h1 {
+			font-family:'Playfair Display', serif;
+			font-size: 3.4em;
+		}
 
 div.banner-girl {
     position: absolute;
     top: 10%;
-    left: 37%;
+    left: 40%;
     width: 18%;
-    height: 70%;
-    opacity: 0.9;
+   	filter: brightness(95%);
+}
+		.banner-girl img {
+			width: 100%;
+		}
+
+/* -----------------------------------------
+			Hand-Crafted Styles Text & 
+			Most Loved Products Text
+------------------------------------------ */
+.handCraft-txt{
+	height: auto;
+	text-align: center;
 }
 
-.banner-girl img {
-	width: 90%;
-}
+	.handCraft-txt div{
+	    width: 50%;
+    	margin: auto;
+	}
+
+	.handCraft-txt h4{
+		padding-top: 30px;
+	    line-height: 2.5;
+	    font-family:'Playfair Display', serif;
+	    font-style: italic;
+	    font-size: 1.5em;
+	}
+
+	.handCraft-txt span{
+		font-family:'Playfair Display', serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 1em;
+	}
+
+	.handCraft-txt p{
+		font-family:'Raleway';
+		line-height: 1.5;
+		font-size: 0.9em;
+		color:#969696;
+		margin-bottom: 3em;
+	}
 
 
 
-/* ------------Category Gallery-------- */
+/* -----------------------------------------
+			Category Gallery
+------------------------------------------ */
 .gallery{
 	display:flex;
 	justify-content: space-around;
@@ -114,34 +164,37 @@ div.banner-girl {
 	font-size: 1.5em;
 	z-index: 2;
 }
-/* ------------carousel-------- */
 
+/* -----------------------------------------
+			Carousel-title
+------------------------------------------ */
+.carousel-title{
+
+}
+
+
+/* -----------------------------------------
+			Carousel
+------------------------------------------ */
 .main-carousel{
-	border: 1px solid black;
-	height: 500px;
+	height: 25em;
 	margin-bottom: 50px;
 	width: 100%;
 }
 
 .carousel-cell {
-	display: flex;
-	flex-direction: column;
-
-  /*width: 25%;
-  height: 300px;
-  margin-right: 5px;
-  margin-left: 0;*/
+	width: 25%;
 }
 
 .carousel-cell img{
   	width: 100%;
  }
 
-.des-box{
-	border:1px solid red;
+.despt-box{
 	width: 100%;
-	height: 50px;
-	color: red;
+	height: 100px;
+	line-height: 1.5;
+	text-align: center;
 }
 
 /* ------------footer styling-------- */
@@ -151,6 +204,7 @@ footer.contact-container {
 	background-color: #000;
 	display: flex;
 	justify-content: space-between;
+	margin-top: 50px;
 }
 
 .contact-container >div {

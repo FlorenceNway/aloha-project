@@ -1,7 +1,7 @@
 
 
 $('.main-carousel').flickity({
-  
-  'groupCells': true;
+  cellAlign: 'left',
+  contain: true
   
 });
