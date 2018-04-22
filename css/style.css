@@ -129,30 +129,37 @@ section.banner {
 	}
 
 	form.m-form input[type="email"]{
-		width: 45%;
+		width: 47%;
 	    left: 7.5%;
 	    padding: 8px;
-   
-	}
+   	}
+
 	form.m-form input[type="submit"]{
-		width: 16%;
-      	left: -10.5%;
-   	    padding: 6px;
-   
-	}
+		width: 18%;
+	    left: -13.5%;
+	    padding: 6px;
+  	}
 
 	/*----------footer---------------*/
+
+	.contact-container{
+		justify-content: flex-start;
+	}
 
 	.contact.m-contact p,.contact.m-contact address{
 		font-size: 10px;
 	}
 
 	.social.m-social li a{
-		font-size: 10px;
+		font-size: 9px;
 	}
 
-	div.m-contact,div.m-social {
-		flex: 0 50%;
+	div.m-contact {
+		flex: 1;
+	}
+
+	div.m-social {
+		flex: 0.5;
 	}
 
 }
@@ -388,12 +395,29 @@ div.banner-girl {
   	width: 100%;
  }
 
+ .despt-box p:nth-child(1){
+	font-size: 12px;
+	font-family: 'Raleway';
+	color:#969696;
+ }
+ .despt-box p:nth-child(2){
+ 	font-size: 16px;
+	font-family: 'Playfair Display', serif;
+	color: #e2574c;
+ }
+ .despt-box p:nth-child(3){
+ 	font-size: 13px;
+	font-family: 'Raleway';
+	color:#969696;
+ }
+
 .despt-box{
 	width: 100%;
 	height: 100px;
 	line-height: 1.5;
 	text-align: center;
 }
+
 
 /* -----------------------------------------
 			Sign Up 
@@ -451,7 +475,7 @@ footer.contact-container {
 
 .contact-container > div {
 	color:#fff;
-	padding: 30px;
+	padding: 30px 15px;
 }
 
 .contact p {
