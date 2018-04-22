@@ -6,6 +6,7 @@
 	<meta name="description" content="Aloha Apparel">
 	<meta name="author" content="Florence">
 	<meta name="keywords" content="aloha,apparel,clothing">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" >
 	<link rel="stylesheet" type="text/css" href="css/font.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -24,7 +25,7 @@
 			<img src="img/aloha-logo.svg" alt="aloha logo">
 		</div>
 		
-		<nav>
+		<nav class="d-menu">
 			<ul class="menu">
 				<li><a href="">About</a></li>
 				<li><a href="">Shop</a></li>
@@ -36,7 +37,22 @@
 		<div class="cart">
 			<img src="img/cart-icon.svg" alt="shopping cart">
 		</div>	
+
 	</section>
+	<!-- ___________Mobile Menu_________	 -->
+
+	<section class="mobile-menu">
+		<hr width="95%">
+		<nav>
+			<ul class="m-menu">
+				<li><a href="">About</a></li>
+				<li><a href="">Shop</a></li>
+				<li><a href="">Feature</a></li>
+				<li><a href="">Updates</a></li>
+			</ul>
+		</nav>
+	</section>
+		
 
 
 <!---  ___Banner Section__     -->
@@ -52,19 +68,21 @@
 		</div>
 	
 	</section>
-<!---  _____Hand-Crafted Styles Text____________     -->	
-	<section class="handCraft-txt">
-		<div>
-			<h4 class="common-txt1">Hand-Crafted <span class="common-txt2">Styles</span></h4>
 
-			<p>Aloha Apparel Co.sells only the finest ready-to-travel clothing.Browse our current selection of products or sign-up for updates below.</p>
+<!---  _____Hand-Crafted Styles Text____________     -->
+
+	<section class="body-text">
+		<div class="txt">
+			<h4>Hand-Crafted <span>Styles</span></h4>
+
+			<p class="tabtxt mtxt">Aloha Apparel Co.sells only the finest ready-to-travel clothing.Browse our current selection of products or sign-up for updates below.</p>
 		</div>
 	</section>	
 	
 <!---  _____Category Gallery____________     -->
 
 		<section class="gallery">
-			<div class="box" style="flex-grow: 3;">
+			<div class="box bigbox m-bbox">
 				<img src="img/mens-category.jpg" alt="">
 				<p><a href="">MEN'S</a></p>
 			</div>
@@ -76,9 +94,7 @@
 				<img src="img/glasses-category.jpg" alt="">
 				<p><a href="">GLASSESS</a></p>
 			</div>
-		</section>	
-
-		<section class="gallery">
+				
 			<div class="box">
 				<img src="img/sale-category.jpg" alt="">
 				<p><a href="">SALES</a></p>
@@ -87,22 +103,23 @@
 				<img src="img/bags-category.jpg" alt="">
 				<p><a href="">BAGS</a></p>
 			</div>
-			<div class="box" style="flex-grow: 3;">
+			<div class="box bigbox m-bbox">
 				<img src="img/womens-category.jpg" alt="">
 				<p><a href="">WOMEN'S</a></p>
 			</div>
 		</section>	
 
 <!-- _______________Carousel________________ -->	
+
 <section>
 
-	<section class="handCraft-txt">
-		<div>
+	<section class="body-text">
+		<div class="txt">
 			<h4>Most loved <span>Products</span></h4>
 		</div>
 	</section>
 
-	<section class="main-carousel" data-flickity='{"wrapRound":true, "groupCells": 4}'>
+	<section class="main-carousel">
 			
 		  <div class="carousel-cell">
 		  	<div>
@@ -195,29 +212,49 @@
   	</section>
 </section>	
 	
+<!-- _______________Sign Up for Updates ___________-->
+
+<section class="sign-up m-signup">
+	<section class="body-text">
+		<div>
+			<h4>Sign-up for <span>Updates</span></h4>
+
+			<p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog.Unsubscribe at any time.</p>
+		
+			<form class="m-form">
+				<input type="email" name="email" placeholder="Your Email">
+				<input type="submit" name="submit" value="Subscribe">
+			</form>
+		</div>
+	</section>
+
+	
+</section>
+
+
 <!-- _______________footer Contact___________ -->
 
 	<footer class="contact-container">
 	
-		<div class="contact">
+		<div class="contact m-contact">
 		
 			<p>&copy; 2017 Alohaa Apparel Co.
 			<br>Powered by HTML and CSS</p>
-			
-			<p>604-604-6040. <a href="">infor@alhoapparel.com</a></p>
-			
+			<br>
+			<p>604-604-6040. <a href="" class="e-mail">infor@alhoapparel.com</a></p>
+			<br>
 			<address>
 				1490 W Broadway<br>
 				Vancouver,BC,Canada
 			</address>
 		</div>
 
-		<div class="social">
+		<div class="social m-social">
 			<ul>
-				<li><a href="www.facebook.com"><i class="fab fa-facebook-f"> FACEBOOK</i></a></li>
-				<li><a href="www.twitter.com"><i class="fab fa-twitter"> TWITTER</i></a></li>
-				<li><a href="www.google.com"><i class="fab fa-google-plus-g"> GOOGLE PLUS</i></a></li>
-				<li><a href="www.linkedIn.com"> <i class="fab fa-linkedin-in"> LinkedIn</i></a></li>
+				<li><a href="www.facebook.com"><i class="fab fa-facebook-f">&nbsp;  FACEBOOK</i></a></li>
+				<li><a href="www.twitter.com"><i class="fab fa-twitter">&nbsp;  TWITTER</i></a></li>
+				<li><a href="www.google.com"><i class="fab fa-google-plus-g">&nbsp;  GOOGLE PLUS</i></a></li>
+				<li><a href="www.linkedIn.com"> <i class="fab fa-linkedin-in">&nbsp;  LinkedIn</i></a></li>
 			</ul>
 		</div>
 	

@@ -1,7 +1,11 @@
-/*---------browser---------- */
+/*---------Common---------- */
 
 a{
 	text-decoration: none;
+}
+
+a:hover{
+	color: #b64036;
 }
 
 body{
@@ -10,9 +14,197 @@ body{
 }
 
 .container{
-	width: 1240px;
+	width: 90%;
 	margin: 0 auto;
 }
+
+
+
+/*__________________MEDIA QUERIES Start______________*/
+ 
+ /*----------For Mobile--------*/
+@media screen and (max-width: 400px) {
+
+/*--------- Logo Menu Cart ----------*/
+ section.mobile-menu{
+    	display: block;
+    }
+
+    .mobile-menu .m-menu{
+    	display: flex;
+    	justify-content: space-around;
+    	padding: 8px;
+    }
+
+    .m-menu a{
+    	color: red;
+    	font-size: 0.7em;
+    	font-family: 'Raleway';
+    	text-transform: uppercase;
+    	color:#e2574c;
+    }
+
+	hr{
+		margin-top:0;
+		margin-bottom:0;
+	}
+
+    .d-menu{
+    	display: none;
+    }
+
+
+/*___Banner_____*/
+
+section.banner {
+	    height: 24em;
+   }
+
+	.banner div.banner-girl {
+	   	left: 29%;
+    	width: 35%;
+	}
+		
+	.banner div.banner-txt {
+		width: 65%;
+    	left: 17%;
+	}
+			.banner .banner-txt p {
+				font-size: 0.6em;
+			}
+
+			.banner .banner-txt h1 {
+				font-size: 1.8em;
+			}
+
+/*___Text_____*/
+
+	section.body-text div.txt{
+	    width: 97%;
+    	margin: auto;
+	}	
+
+	.body-text div p.mtxt{
+		font-size: 15px;
+		line-height: 1.7;
+  	 }	
+
+/*__________Gallery___________*/
+
+	.gallery div.box{
+		flex: 0 47.75%;
+	    margin: 2.5px;
+	 }
+
+	
+	.gallery .box p{
+		left: 36%;
+		font-size: 0.8em;
+	 }
+
+	.box.bigbox.m-bbox {
+    flex: 0 100%;
+	}
+
+/*__________sign up___________*/
+
+	.sign-up.m-signup{
+		height: 16em;
+	}
+
+	.sign-up.m-signup .body-text div{
+		width: 95%;
+	}
+
+	.sign-up.m-signup .body-text div p{
+		font-size: 13px;
+	}
+
+	.sign-up.m-signup {
+		background-size: auto;
+	}
+
+	.sign-up.m-signup div form{
+		width: 100%;
+	}
+
+	form.m-form input[type="email"]{
+		width: 45%;
+	    left: 7.5%;
+	    padding: 8px;
+   
+	}
+	form.m-form input[type="submit"]{
+		width: 16%;
+      	left: -10.5%;
+   	    padding: 6px;
+   
+	}
+
+	/*----------footer---------------*/
+
+	.contact.m-contact p,.contact.m-contact address{
+		font-size: 10px;
+	}
+
+	.social.m-social li a{
+		font-size: 10px;
+	}
+
+	div.m-contact,div.m-social {
+		flex: 0 50%;
+	}
+
+}
+
+
+/*---------------------------------------
+			For Tablet
+-----------------------------------------*/
+@media screen and (max-width: 800px) {
+
+	.body-text div.txt{
+	    width: 85%;
+    	margin: auto;
+	}
+
+	.body-text p.tabtxt{
+		font-size: 18px;
+  	    margin-bottom: 2em;
+	}
+
+	/*--------------banner----------------*/
+
+	.banner div.banner-girl {
+	    left: 35%;
+	    width: 27%;
+	    height: 90%;
+	    filter: brightness(95%);
+	}
+
+
+
+	/*--------Gallery-----------*/
+	.gallery div.box p {
+	    left: 26%;
+	    font-size: 0.8em;
+	}
+	
+	/*--------Sign Up-----------*/
+	.sign-up .body-text div{
+		width: 90%;
+	}
+
+	.sign-up.m-signup {
+		background-size: auto;
+	}
+
+}	
+
+/*---------------------------------------------------
+		************End Media Querie*********
+_______________________________________________________________*/
+
 
 /*--------------------------------------------
 		Header Section/Logo Menu Cart
@@ -23,15 +215,19 @@ section.logo-menu-cart {
 }
 
 .logo {
-	width: 20%;
+	flex:0 0 25%;
 }
 
-.logo img{
-	width: 16em;
+.logo img, .cart img{
+	width: 100%;
+}
+
+.cart{
+	flex:0 0 10%;
 }
 
 nav{
-	flex-grow: 0.3;
+	flex:0 0 40%;
 }
 
 ul.menu {
@@ -43,33 +239,39 @@ ul.menu {
 
 .menu li a{
 	text-transform: uppercase;
-	color: red;
+	color: #e2574c;
+}
+
+.mobile-menu{
+	display: none;
 }
 
 /*--------------------------------------------
 			Banner Section
 ----------------------------------------------*/
 
-section.banner {
+.banner {
 	background: url(../img/flower-bkgd.jpg) no-repeat;
     background-size: cover;
-    height: 38em;
+    height: 37em;
     position: relative;
     filter: brightness(80%);
 }
 
 div.banner-txt {
+	width: 56%;
 	position: absolute;
     top: 33%;
-    left: 29%;
+    left: 22%;
     color: #fff;
     line-height: 1.5;
     text-align: center;
     text-shadow: 2px 1px 0px #242424;
+    margin: 0 auto;
 }
 		.banner-txt p {
 			font-family: "Raleway"; 
-			font-size: 14px;
+			font-size: 0.8em;
 			font-weight: bold;
 		}
 
@@ -82,46 +284,48 @@ div.banner-girl {
     position: absolute;
     top: 10%;
     left: 40%;
-    width: 18%;
-   	filter: brightness(95%);
+    width: 17%;
+    height: 90%;
+    filter: brightness(95%);
 }
 		.banner-girl img {
 			width: 100%;
+			height: 100%;
 		}
 
 /* -----------------------------------------
-			Hand-Crafted Styles Text & 
-			Most Loved Products Text
+	Hand-Crafted Styles Text & 
+	Most Loved Products Text & Sign Up
 ------------------------------------------ */
-.handCraft-txt{
+.body-text{
 	height: auto;
 	text-align: center;
 }
 
-	.handCraft-txt div{
+	.body-text div{
 	    width: 50%;
     	margin: auto;
 	}
 
-	.handCraft-txt h4{
+	.body-text h4{
 		padding-top: 30px;
 	    line-height: 2.5;
 	    font-family:'Playfair Display', serif;
 	    font-style: italic;
-	    font-size: 1.5em;
+	    font-size: 1.7em;
 	}
 
-	.handCraft-txt span{
+	.body-text span{
 		font-family:'Playfair Display', serif;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 1em;
 	}
 
-	.handCraft-txt p{
+	.body-text p{
 		font-family:'Raleway';
 		line-height: 1.5;
-		font-size: 0.9em;
+		font-size: 1em;
 		color:#969696;
 		margin-bottom: 3em;
 	}
@@ -137,11 +341,13 @@ div.banner-girl {
 	flex-wrap: wrap;
 }
 
+.gallery .bigbox{
+	flex-grow: 3;
+}
+
 .box{
-	flex: 1.49;
-   	width: 427px;
-    height: 300px;
-   	margin:2px;
+	flex: 0 24.65%;
+    margin: 2.5px;
     position: relative;
 }
 
@@ -154,7 +360,7 @@ div.banner-girl {
 .box p{
 	position: absolute;
 	top: 41%;
-	left: 43%;
+	left: 38%;
 	font-family: "Raleway";
     font-weight: 500;
  }
@@ -164,14 +370,6 @@ div.banner-girl {
 	font-size: 1.5em;
 	z-index: 2;
 }
-
-/* -----------------------------------------
-			Carousel-title
------------------------------------------- */
-.carousel-title{
-
-}
-
 
 /* -----------------------------------------
 			Carousel
@@ -197,28 +395,84 @@ div.banner-girl {
 	text-align: center;
 }
 
+/* -----------------------------------------
+			Sign Up 
+------------------------------------------ */
+.sign-up {
+		height: 17em;
+	    background: url(../img/wave-bkgd.jpg) no-repeat;
+	    background-size: cover;
+	    background-position: bottom;
+	    margin:auto;
+}
+
+.sign-up div{
+	width: 80%;
+}
+
+	.sign-up h4, .sign-up p{
+		color: #fff;
+	}
+
+	input[type="email"]{
+		width: 45%;
+	    position: relative;
+	    left: 8%;
+	    border-radius: 15px;
+	    padding: 10px;
+	    border: 0;
+	    font-size: 10px;
+	}
+
+	input[type="submit"]{
+		width: 14%;
+	    position: relative;
+	    left: -7.5%;
+	    background-color: #e2574c;
+	    border-radius: 11px;
+	    box-sizing: border-box;
+	    font-size: 9px;
+	    padding: 7px;
+	    color: #fff;
+	    border: 0;
+	}
+
+
+
 /* ------------footer styling-------- */
 
 footer.contact-container {
 	width: 100%;
-	background-color: #000;
+	background-color:#242424;
 	display: flex;
 	justify-content: space-between;
-	margin-top: 50px;
+	
 }
 
-.contact-container >div {
+.contact-container > div {
 	color:#fff;
 	padding: 30px;
 }
 
 .contact p {
 	font-family: 'Playfair Display', serif;
+	line-height: 1.5;
 	
 }
 
-footer a{
+.contact a.e-mail{
+	text-decoration: underline;
 	color:#fff;
+}
+
+.contact address{
+	font-family: 'Playfair Display', serif;
+	color:#969696;
+}
+
+footer ul a{
+	color:#fff;
+	line-height: 2;
 }
 
 .social ul{
