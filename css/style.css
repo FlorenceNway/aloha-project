@@ -89,6 +89,15 @@ section.banner {
 		line-height: 1.7;
   	 }	
 
+/*__________Carousel___________*/
+
+.main-carousel div.carousel-cell {
+	width: 100%;
+}
+
+
+
+
 /*__________Gallery___________*/
 
 	.gallery div.box{
@@ -129,7 +138,7 @@ section.banner {
 	}
 
 	form.m-form input[type="email"]{
-		width: 47%;
+		width: 48%;
 	    left: 7.5%;
 	    padding: 8px;
    	}
@@ -137,7 +146,7 @@ section.banner {
 	form.m-form input[type="submit"]{
 		width: 18%;
 	    left: -13.5%;
-	    padding: 6px;
+	    padding: 5px;
   	}
 
 	/*----------footer---------------*/
@@ -147,11 +156,11 @@ section.banner {
 	}
 
 	.contact.m-contact p,.contact.m-contact address{
-		font-size: 10px;
+		font-size: 9px;
 	}
 
 	.social.m-social li a{
-		font-size: 9px;
+		font-size: 8px;
 	}
 
 	div.m-contact {
@@ -189,7 +198,11 @@ section.banner {
 	    filter: brightness(95%);
 	}
 
+	/*__________Carousel___________*/
 
+.main-carousel .carousel-cell {
+	width: 50%;
+}
 
 	/*--------Gallery-----------*/
 	.gallery div.box p {
@@ -389,6 +402,7 @@ div.banner-girl {
 
 .carousel-cell {
 	width: 25%;
+	height: auto;
 }
 
 .carousel-cell img{
